@@ -1,0 +1,188 @@
+package com.google.android.gms.internal.ads;
+
+import android.os.Bundle;
+import android.os.Parcel;
+import android.os.Parcelable;
+import android.text.TextUtils;
+import com.google.android.gms.common.internal.safeparcel.AbstractSafeParcelable;
+import com.google.android.gms.common.internal.safeparcel.SafeParcelWriter;
+import java.util.Collections;
+import java.util.List;
+import javax.annotation.ParametersAreNonnullByDefault;
+
+/* compiled from: com.google.android.gms:play-services-ads@@18.2.0 */
+@ParametersAreNonnullByDefault
+/* loaded from: classes.dex */
+public final class zzaon extends AbstractSafeParcelable {
+    public static final Parcelable.Creator<zzaon> CREATOR = new zzaoq();
+    private final int errorCode;
+    private final int orientation;
+    private final int versionCode;
+    private final zzaop zzbkt;
+    private final boolean zzbld;
+    private final boolean zzble;
+    private final boolean zzbmb;
+    private final String zzbzn;
+    private final boolean zzcco;
+    private final boolean zzccp;
+    private final List<String> zzdby;
+    private final List<String> zzdbz;
+    private final List<String> zzdca;
+    private final List<String> zzdcc;
+    private final boolean zzdcd;
+    private final long zzdcf;
+    private final String zzdhz;
+    private final boolean zzdjb;
+    private final boolean zzdjo;
+    private String zzdjp;
+    private final boolean zzdkb;
+    private String zzdko;
+    private final long zzdkp;
+    private final boolean zzdkq;
+    private final long zzdkr;
+    private final List<String> zzdks;
+    private final String zzdkt;
+    private final long zzdku;
+    private final String zzdkv;
+    private final boolean zzdkw;
+    private final String zzdkx;
+    private final String zzdky;
+    private final boolean zzdkz;
+    private final boolean zzdla;
+    private final boolean zzdlb;
+    private zzaoz zzdlc;
+    private String zzdld;
+    private final zzaqt zzdle;
+    private final List<String> zzdlf;
+    private final List<String> zzdlg;
+    private final boolean zzdlh;
+    private final String zzdli;
+    private final zzasd zzdlj;
+    private final String zzdlk;
+    private final boolean zzdll;
+    private Bundle zzdlm;
+    private final int zzdln;
+    private final boolean zzdlo;
+    private final String zzdlp;
+    private String zzdlq;
+    private boolean zzdlr;
+    private boolean zzdls;
+
+    /* JADX INFO: Access modifiers changed from: package-private */
+    public zzaon(int i, String str, String str2, List<String> list, int i2, List<String> list2, long j, boolean z, long j2, List<String> list3, long j3, int i3, String str3, long j4, String str4, boolean z2, String str5, String str6, boolean z3, boolean z4, boolean z5, boolean z6, boolean z7, zzaoz zzaozVar, String str7, String str8, boolean z8, boolean z9, zzaqt zzaqtVar, List<String> list4, List<String> list5, boolean z10, zzaop zzaopVar, boolean z11, String str9, List<String> list6, boolean z12, String str10, zzasd zzasdVar, String str11, boolean z13, boolean z14, Bundle bundle, boolean z15, int i4, boolean z16, List<String> list7, boolean z17, String str12, String str13, boolean z18, boolean z19) {
+        zzapg zzapgVar;
+        this.versionCode = i;
+        this.zzdhz = str;
+        this.zzdko = str2;
+        this.zzdby = list != null ? Collections.unmodifiableList(list) : null;
+        this.errorCode = i2;
+        this.zzdbz = list2 != null ? Collections.unmodifiableList(list2) : null;
+        this.zzdkp = j;
+        this.zzdkq = z;
+        this.zzdkr = j2;
+        this.zzdks = list3 != null ? Collections.unmodifiableList(list3) : null;
+        this.zzdcf = j3;
+        this.orientation = i3;
+        this.zzdkt = str3;
+        this.zzdku = j4;
+        this.zzdkv = str4;
+        this.zzdkw = z2;
+        this.zzdkx = str5;
+        this.zzdky = str6;
+        this.zzdkz = z3;
+        this.zzbmb = z4;
+        this.zzdjb = z5;
+        this.zzdla = z6;
+        this.zzdll = z13;
+        this.zzdlb = z7;
+        this.zzdlc = zzaozVar;
+        this.zzdld = str7;
+        this.zzbzn = str8;
+        if (this.zzdko == null && zzaozVar != null && (zzapgVar = (zzapg) zzaozVar.zza(zzapg.CREATOR)) != null && !TextUtils.isEmpty(zzapgVar.zzdmd)) {
+            this.zzdko = zzapgVar.zzdmd;
+        }
+        this.zzcco = z8;
+        this.zzccp = z9;
+        this.zzdle = zzaqtVar;
+        this.zzdlf = list4;
+        this.zzdlg = list5;
+        this.zzdlh = z10;
+        this.zzbkt = zzaopVar;
+        this.zzdjo = z11;
+        this.zzdjp = str9;
+        this.zzdcc = list6;
+        this.zzdcd = z12;
+        this.zzdli = str10;
+        this.zzdlj = zzasdVar;
+        this.zzdlk = str11;
+        this.zzdkb = z14;
+        this.zzdlm = bundle;
+        this.zzbld = z15;
+        this.zzdln = i4;
+        this.zzdlo = z16;
+        this.zzdca = list7 != null ? Collections.unmodifiableList(list7) : null;
+        this.zzble = z17;
+        this.zzdlp = str12;
+        this.zzdlq = str13;
+        this.zzdlr = z18;
+        this.zzdls = z19;
+    }
+
+    @Override // android.os.Parcelable
+    public final void writeToParcel(Parcel parcel, int i) {
+        int beginObjectHeader = SafeParcelWriter.beginObjectHeader(parcel);
+        SafeParcelWriter.writeInt(parcel, 1, this.versionCode);
+        SafeParcelWriter.writeString(parcel, 2, this.zzdhz, false);
+        SafeParcelWriter.writeString(parcel, 3, this.zzdko, false);
+        SafeParcelWriter.writeStringList(parcel, 4, this.zzdby, false);
+        SafeParcelWriter.writeInt(parcel, 5, this.errorCode);
+        SafeParcelWriter.writeStringList(parcel, 6, this.zzdbz, false);
+        SafeParcelWriter.writeLong(parcel, 7, this.zzdkp);
+        SafeParcelWriter.writeBoolean(parcel, 8, this.zzdkq);
+        SafeParcelWriter.writeLong(parcel, 9, this.zzdkr);
+        SafeParcelWriter.writeStringList(parcel, 10, this.zzdks, false);
+        SafeParcelWriter.writeLong(parcel, 11, this.zzdcf);
+        SafeParcelWriter.writeInt(parcel, 12, this.orientation);
+        SafeParcelWriter.writeString(parcel, 13, this.zzdkt, false);
+        SafeParcelWriter.writeLong(parcel, 14, this.zzdku);
+        SafeParcelWriter.writeString(parcel, 15, this.zzdkv, false);
+        SafeParcelWriter.writeBoolean(parcel, 18, this.zzdkw);
+        SafeParcelWriter.writeString(parcel, 19, this.zzdkx, false);
+        SafeParcelWriter.writeString(parcel, 21, this.zzdky, false);
+        SafeParcelWriter.writeBoolean(parcel, 22, this.zzdkz);
+        SafeParcelWriter.writeBoolean(parcel, 23, this.zzbmb);
+        SafeParcelWriter.writeBoolean(parcel, 24, this.zzdjb);
+        SafeParcelWriter.writeBoolean(parcel, 25, this.zzdla);
+        SafeParcelWriter.writeBoolean(parcel, 26, this.zzdlb);
+        SafeParcelWriter.writeParcelable(parcel, 28, this.zzdlc, i, false);
+        SafeParcelWriter.writeString(parcel, 29, this.zzdld, false);
+        SafeParcelWriter.writeString(parcel, 30, this.zzbzn, false);
+        SafeParcelWriter.writeBoolean(parcel, 31, this.zzcco);
+        SafeParcelWriter.writeBoolean(parcel, 32, this.zzccp);
+        SafeParcelWriter.writeParcelable(parcel, 33, this.zzdle, i, false);
+        SafeParcelWriter.writeStringList(parcel, 34, this.zzdlf, false);
+        SafeParcelWriter.writeStringList(parcel, 35, this.zzdlg, false);
+        SafeParcelWriter.writeBoolean(parcel, 36, this.zzdlh);
+        SafeParcelWriter.writeParcelable(parcel, 37, this.zzbkt, i, false);
+        SafeParcelWriter.writeBoolean(parcel, 38, this.zzdjo);
+        SafeParcelWriter.writeString(parcel, 39, this.zzdjp, false);
+        SafeParcelWriter.writeStringList(parcel, 40, this.zzdcc, false);
+        SafeParcelWriter.writeBoolean(parcel, 42, this.zzdcd);
+        SafeParcelWriter.writeString(parcel, 43, this.zzdli, false);
+        SafeParcelWriter.writeParcelable(parcel, 44, this.zzdlj, i, false);
+        SafeParcelWriter.writeString(parcel, 45, this.zzdlk, false);
+        SafeParcelWriter.writeBoolean(parcel, 46, this.zzdll);
+        SafeParcelWriter.writeBoolean(parcel, 47, this.zzdkb);
+        SafeParcelWriter.writeBundle(parcel, 48, this.zzdlm, false);
+        SafeParcelWriter.writeBoolean(parcel, 49, this.zzbld);
+        SafeParcelWriter.writeInt(parcel, 50, this.zzdln);
+        SafeParcelWriter.writeBoolean(parcel, 51, this.zzdlo);
+        SafeParcelWriter.writeStringList(parcel, 52, this.zzdca, false);
+        SafeParcelWriter.writeBoolean(parcel, 53, this.zzble);
+        SafeParcelWriter.writeString(parcel, 54, this.zzdlp, false);
+        SafeParcelWriter.writeString(parcel, 55, this.zzdlq, false);
+        SafeParcelWriter.writeBoolean(parcel, 56, this.zzdlr);
+        SafeParcelWriter.writeBoolean(parcel, 57, this.zzdls);
+        SafeParcelWriter.finishObjectHeader(parcel, beginObjectHeader);
+    }
+}

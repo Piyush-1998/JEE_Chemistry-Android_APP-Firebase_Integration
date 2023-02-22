@@ -1,0 +1,11 @@
+package com.google.android.gms.internal.ads;
+
+import javax.annotation.ParametersAreNonnullByDefault;
+
+/* compiled from: com.google.android.gms:play-services-ads@@18.2.0 */
+@ParametersAreNonnullByDefault
+/* loaded from: classes.dex */
+public final class zzri {
+    private final Object zzbre = new Object();
+    private boolean zzbrf = false;
+}
