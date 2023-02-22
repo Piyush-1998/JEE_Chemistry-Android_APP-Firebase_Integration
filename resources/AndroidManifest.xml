@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:versionCode="2" android:versionName="1.1" android:compileSdkVersion="29" android:compileSdkVersionCodename="10" package="com.pm161998.jeechemistry" platformBuildVersionCode="29" platformBuildVersionName="10">
+    <uses-sdk android:minSdkVersion="16" android:targetSdkVersion="29"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE"/>
+    <application android:theme="@style/AppTheme" android:label="@string/app_name" android:icon="@mipmap/ic_launcher1" android:allowBackup="true" android:supportsRtl="true" android:roundIcon="@mipmap/ic_launcher1_round" android:appComponentFactory="androidx.core.app.CoreComponentFactory">
+        <activity android:name="com.pm161998.jeechemistry.no_internet_connection2"/>
+        <activity android:name="com.pm161998.jeechemistry.Loading_screen"/>
+        <activity android:name="com.pm161998.jeechemistry.onBoarding"/>
+        <activity android:name="com.pm161998.jeechemistry.Syllabus_view_pdf_opener"/>
+        <activity android:name="com.pm161998.jeechemistry.Syllabus_pdf_opener"/>
+        <activity android:name="com.pm161998.jeechemistry.Questions_view_pdf_opener"/>
+        <activity android:name="com.pm161998.jeechemistry.Questions_pdf_opener"/>
+        <activity android:name="com.pm161998.jeechemistry.Chemistry_view_pdf_opener"/>
+        <activity android:name="com.pm161998.jeechemistry.Chemistry_pdf_opener"/>
+        <activity android:name="com.pm161998.jeechemistry.MockTest_view_pdf_opener"/>
+        <activity android:name="com.pm161998.jeechemistry.MockTest_pdf_opener"/>
+        <activity android:name="com.pm161998.jeechemistry.formula_view_pdf_opener"/>
+        <activity android:name="com.pm161998.jeechemistry.formula_pdf_opener"/>
+        <activity android:name="com.pm161998.jeechemistry.flt_view_pdf_opener"/>
+        <activity android:name="com.pm161998.jeechemistry.flt_pdf_opener"/>
+        <activity android:name="com.pm161998.jeechemistry.dashboard"/>
+        <activity android:name="com.pm161998.jeechemistry.CheatBook_view_pdf_opener"/>
+        <activity android:name="com.pm161998.jeechemistry.CheatBook_pdf_opener"/>
+        <activity android:name="com.pm161998.jeechemistry.Books_view_pdf_opener"/>
+        <activity android:name="com.pm161998.jeechemistry.Books_pdf_opener"/>
+        <activity android:name="com.pm161998.jeechemistry.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <meta-data android:name="com.google.android.gms.ads.APPLICATION_ID" android:value=""/>
+        <service android:name="com.google.firebase.components.ComponentDiscoveryService" android:exported="false" android:directBootAware="true">
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.database.DatabaseRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+        </service>
+        <activity android:theme="@android:style/Theme.Translucent.NoTitleBar" android:name="com.google.android.gms.common.api.GoogleApiActivity" android:exported="false"/>
+        <provider android:name="com.google.firebase.provider.FirebaseInitProvider" android:exported="false" android:authorities="" android:initOrder="100"/>
+        <activity android:theme="@android:style/Theme.Translucent" android:name="com.google.android.gms.ads.AdActivity" android:exported="false" android:configChanges="smallestScreenSize|screenSize|uiMode|screenLayout|orientation|keyboardHidden|keyboard"/>
+        <provider android:name="com.google.android.gms.ads.MobileAdsInitProvider" android:exported="false" android:authorities="com.pm161998.jeechemistry.mobileadsinitprovider" android:initOrder="100"/>
+        <receiver android:name="com.google.android.gms.measurement.AppMeasurementReceiver" android:enabled="true" android:exported="false"/>
+        <receiver android:name="com.google.android.gms.measurement.AppMeasurementInstallReferrerReceiver" android:permission="android.permission.INSTALL_PACKAGES" android:enabled="true" android:exported="true">
+            <intent-filter>
+                <action android:name="com.android.vending.INSTALL_REFERRER"/>
+            </intent-filter>
+        </receiver>
+        <service android:name="com.google.android.gms.measurement.AppMeasurementService" android:enabled="true" android:exported="false"/>
+        <service android:name="com.google.android.gms.measurement.AppMeasurementJobService" android:permission="android.permission.BIND_JOB_SERVICE" android:enabled="true" android:exported="false"/>
+        <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version"/>
+        <meta-data android:name="com.android.vending.derived.apk.id" android:value="1"/>
+    </application>
+</manifest>
